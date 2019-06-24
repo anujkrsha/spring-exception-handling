@@ -14,7 +14,7 @@ public class OrderController {
 	@Autowired
 	private OrderService service;
 
-	@GetMapping("/getPrice/productName")
+	@GetMapping("/getPrice/{productName}")
 	public String getOrderPrice(@PathVariable String productName) throws OrderServiceException {
 		double amount = service.getPrice(productName);
 		return "amount for product" + productName + "is" + amount;

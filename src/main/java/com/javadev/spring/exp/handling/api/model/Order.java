@@ -3,7 +3,7 @@ package com.javadev.spring.exp.handling.api.model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity(name = "ORDER")
+@Entity(name = "ORDER_TBL")
 public class Order {
 	@Id
 	private int id;
